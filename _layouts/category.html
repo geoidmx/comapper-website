@@ -1,0 +1,50 @@
+---
+layout: default
+---
+
+<section class="container">
+    <div class="tareas-wrapper">
+        <div class="tareas-card">
+            <div class="tareas-title">
+                <h2>Tareas disponibles Categoria: {{page.title}}</h2>
+                <p class="dark-60">Filtra mediante la categoria de tu interes</p>
+                <nav class="categories">
+                    {% assign all_categories = "" | split: "," %}
+                    {% for task in site.tasks %}
+                        {% unless all_categories contains task.category %}
+                            {% assign all_categories = all_categories | push: task.category %}
+                        {% endunless %}
+                    {% endfor %}
+                    <ul>
+                        {% for category in all_categories %}
+                        <li><a href="{{ site.baseurl }}/tareas/categoria/{{ category | slugify }}/">{{ category }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        {% if page.pagination.category == "todas"%}
+            {% assign filtered_staff_members = site[page.pagination.collection] %}
+        {% else %}
+            {% assign filtered_staff_members = site[page.pagination.collection] | where: "category", page.pagination.category %}
+        {% endif %}
+        {% for task in filtered_staff_members %}
+        <div class="tareas-card">
+            <div class="card-left">
+                <img src="{{ task.image }}" alt="" class="img-fluid">
+                <P class="category"><strong>{{ task.category }}</strong></P>
+                <P class="category">Disponible: {{ task.open_date }}</P>
+            </div>
+            <div class="card-right">
+                <h5>{{ task.title }}</h5>
+                <p class="smaller dark-60 task-summary"> {{ task.description }}</p>
+                <p class="align-right card-footer">
+                    <a href="{{ task.url }}" class="">Leer mas</a>
+                    <a href="#" class="">Unirme</a>
+                </p>
+
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: " es-MX" }}">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} - {{ site.title }}</title>
+  <link rel="stylesheet" href="{{ " /assets/css/main.css" }}">
+  <script src="{{ "/assets/js/nav.js" }}" defer></script>
+</head>
+
+<body>
+  <div class="brand">
+    <img src="{{ "/assets/img/logo-commaper.png" }}" alt="">
+  </div>
+  <header>
+    <div class="hero">
+      <h1>{{ page['header hero'].title }}</h1>
+      <p>{{ page['header hero'].text }}</p>
+      <a href="{{ page['header hero'].url }}" class="btn">Contribuir</a>
+    </div>
+    <div class="outstanding"
+      style="background-image: url('{{ page['header project'].image }}'); background-size: cover;">
+      <div class="light">
+        <h5>{{ page['header project'].title }}</h5>
+        <p class="small">{{ page['header project'].text }}</p>
+        <a href="{{ page['header project'].url }}" class="btn-round">➜</a>
+      </div>
+    </div>
+  </header>
+
+  {% include nav_home.html %}
+
+  <main>
+    <section class="container">
+      <div class="hacemos-wrapper">
+        <div class="hacemos-card-main">
+          <h2>¿Qué hacemos?</h2>
+          <p class="small light-60">Sumate para mejorar los datos disponibles en tu comunidad o pide nuestra
+            colaboracion para sumar a tu proyecto.</p>
+        </div>
+        <div class="hacemos-card">
+          <div class="hacemos-icon">
+            <img src="{{ "/assets/img/icon.png" }}" alt="">
+          </div>
+          <h4>Cartografía colaborativa</h4>
+          <p class="small dark-60">Contribuimos y editamos datos geoespaciales en proyectos de mapeo en línea
+            de acceso libre y colaborativo en todo el mundo.</p>
+          <div class="hacemos-card-footer"><a href="{{ page['we do'].mapping_url }}" class="btn-round-light">➜</a></div>
+
+        </div>
+        <div class="hacemos-card">
+          <div class="hacemos-icon">
+            <img src="{{ "/assets/img/icon-b.png" }}" alt="">
+          </div>
+          <h4>Gtools</h4>
+          <p class="small dark-60">Herramienta web para la socialización de datos abiertos y voluntarios, que
+            permite compartir, consultar, imprimir y descargar de información a proyectos locales.</p>
+          <div class="hacemos-card-footer"><a href="{{ page['we do'].gtools_url }}" class="btn-round-light">➜</a></div>
+        </div>
+        <div class="hacemos-card">
+          <div class="hacemos-icon">
+            <img src="{{ "/assets/img/icon.png" }}" alt="">
+          </div>
+          <h4>Capacitaciones y acompañamiento</h4>
+          <p class="small dark-60">Brindamos apoyo a proyectos para fortalecer las capacidades internas de las
+            organizaciones y alcanzar sus metas sin depender de recursos externos.</p>
+          <div class="hacemos-card-footer"><a href="{{ page['we do'].training_url }}" class="btn-round-light">➜</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMO CONTRIBUIR -->
+    <section class="container contribuir">
+      <h2>Cómo contribuir</h2>
+      <p>Sigue estos pasos para unirte a la acción.</p>
+      <div class="contribuir-wrapper">
+        <div>
+          <img src="{{ "/assets/img/test-1.png" }}" alt="" class="img-fluid">
+          <h5>Descubre tu pasión</h5>
+          <p class="small dark-60">Descubre cómo tu interés por la cartografía colaborativa y los datos
+            abiertos puede contribuir a proyectos significativos.</p>
+        </div>
+        <div>
+          <img src="{{ "/assets/img/test-2.png" }}" alt="" class="img-fluid">
+          <h5>Explora nuestras líneas de acción</h5>
+          <p class="small dark-60">Encuentra la línea de acción en la que puedes aplicar tus habilidades en
+            cartografía y datos abiertos hacer la mayor diferencia.</p>
+        </div>
+        <div>
+          <img src="{{ "/assets/img/test-3.png" }}" alt="" class="img-fluid">
+          <h5>Únete a la comunidad Comapper</h5>
+          <p class="small dark-60">Conectate con otros entusiastas, intercambia ideas y recibe orientación. La
+            fuerza de nuestra comunidad radica en la diversidad de talentos y perspectivas.</p>
+        </div>
+        <div>
+          <img src="{{ "/assets/img/test-2.png" }}" alt="" class="img-fluid">
+          <h5>Involúcrate en una tarea</h5>
+          <p class="small dark-60">Unete mapeando, desarrollando tecnología, mejorando datos o contribuyendo
+            en proyectos temáticos. Una tarea espera tu participación.</p>
+        </div>
+        <div>
+          <img src="{{ "/assets/img/test-3.png" }}" alt="" class="img-fluid">
+          <h5>Documenta y comparte tu trabajo</h5>
+          <p class="small dark-60">Asegúrate de documentar y compartir. Una robusta documentacion mejora la
+            calidad del proyecto, e inspira a otros a seguir tu ejemplo. </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- HISTORIAS DE EXITO -->
+    <section class="container">
+      <div class="historias-wrapper">
+        <div class="historias-main">
+          <h2>Historias de exito</h2>
+          <p class="dark-60">Promoción de la cartografía colaborativa,
+            la socialización de datos abiertos, y el uso de tecnología libre.
+          </p>
+        </div>
+        {% for project in site.projects limit:3 %}
+        <div class="historias-card">
+          <img src="{{ project.image }}" alt="" class="bg-card">
+          <div class="historias-card-content">
+            <div class="historias-card-text">
+              <h5>{{ project.title }}</h5>
+              <p class="small light-60">{{ project.description }}</p>
+              <a href="{{ project.url }}" class="btn-round">➜</a>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </section>
+
+    <!-- TAREAS -->
+    <section class="container">
+      <div class="tareas-wrapper">
+        <div class="tareas-card">
+          <div class="tareas-title">
+            <h2>Tareas disponibles</h2>
+            <p class="dark-60">Filtra mediante la categoria de tu interes</p>
+            <nav class="categories">
+              {% assign all_categories = "" | split: "," %}
+              {% for task in site.tasks %}
+                {% unless all_categories contains task.category %}
+                  {% assign all_categories = all_categories | push: task.category %}
+                {% endunless %}
+              {% endfor %}
+              <ul>
+                {% for category in all_categories %}
+                <li><a href="{{ site.baseurl }}/tareas/categoria/{{ category | slugify }}/">{{ category
+                    }}</a></li>
+                {% endfor %}
+              </ul>
+            </nav>
+            <a href="{{ site.baseurl }}/tareas/categoria/todas/">Ver todos</a>
+          </div>
+        </div>
+
+        {% for task in site.tasks limit:6 %}
+        <div class="tareas-card">
+          <div class="card-left">
+            <img src="{{ task.image }}" alt="" class="img-fluid">
+            <P class="category"><strong>{{ task.category }}</strong></P>
+            <P class="category">Disponible: {{ task.open_date }}</P>
+          </div>
+          <div class="card-right">
+            <h5>{{ task.title }}</h5>
+            <p class="smaller dark-60 task-summary"> {{ task.description }}</p>
+            <p class="align-right card-footer">
+              <a href="{{ task.url }}" class="">Leer mas</a>
+              <a href="#" class="">Unirme</a>
+            </p>
+
+          </div>
+        </div>
+        {% endfor %}
+
+      </div>
+    </section>
+
+    <!-- COMUNIDAD -->
+    <section class="container">
+      <div class="hacemos-wrapper">
+        <div class="hacemos-card-main bg-secondary">
+          <h2>Comunidad</h2>
+          <p class="light-60">Conocenos, Porro sequi quisquam.
+          </p>
+        </div>
+        <div class="hacemos-card">
+          <div class="hacemos-icon">
+            <img src="{{ "/assets/img/icon.png" }}" alt="">
+          </div>
+          <h4>Blog</h4>
+          <p class="small dark-60">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae numquam at
+            consequatur, ratione.</p>
+          <div class="hacemos-card-footer"><a href="{{ page['community'].blog_url }}" class="btn-round-light">➜</a>
+          </div>
+        </div>
+        <div class="hacemos-card">
+          <div class="hacemos-icon">
+            <img src="{{ "/assets/img/icon.png" }}" alt="">
+          </div>
+          <h4>Eventos</h4>
+          <p class="small dark-60">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae numquam at
+            consequatur, ratione.</p>
+          <div class="hacemos-card-footer"><a href="{{ page['community'].events_url }}" class="btn-round-light">➜</a>
+          </div>
+        </div>
+        <div class="hacemos-card">
+          <div class="hacemos-icon">
+            <img src="{{ "/assets/img/icon.png" }}" alt="">
+          </div>
+          <h4>Recompensas</h4>
+          <p class="small dark-60">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae numquam at
+            consequatur, ratione.</p>
+          <div class="hacemos-card-footer"><a href="{{ page['community'].rewards_url }}" class="btn-round-light">➜</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NOSOTROS -->
+    <section class="container">
+      <div class="somos-wrapper">
+        <div class="historioas-main">
+          <h2>¿Quiénes somos?</h2>
+          <p class="dark-60">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="somos-card">
+          <div class="avatars">
+            <ul class="avatar-list">
+              {% for person in site.people limit:5 %}
+                <li><a href="{{ person.url }}"><img src="{{ person.photo }}" alt=""></a></li>
+              {% endfor %}
+              {% assign total_collections = site.people | size %}
+              <li><a href="{{ page['we are'].people_url }}">+{{ total_collections }}</a></li>
+            </ul>
+          </div>
+          <h5>Conoce al equipo Co.Mapper</h5>
+          <p class="small dark-60">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, vitae. Ad,
+            sapiente
+            voluptas dolor molestiae quo beatae facere ipsam quod officia, ex ut nihil nisi, a cum quam
+            mollitia
+            fugit.</p>
+          <a href="{{ page['we are'].people_url }}">Ver mas</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- INVOLUCRADOS -->
+    <section class="container stakeholders">
+      <h2>Colaboramos</h2>
+      <p>Organizaciones, Sociedad Civil, Universidades y Gobierno nos hemos unido para impulsar la iniciativa que
+        permitirá fortalecer los datos abiertos.</p>
+      <ul>
+        {% for collaborate in page['we collaborate'] %}
+        <li>
+          <a href="{{ collaborate.collaborator.url }}">
+            <img src="{{ collaborate.collaborator.image }}" alt="{{ collaborate.collaborator.name }}"
+              title="{{ collaborate.collaborator.name }}" class="img-fluid">
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </section>
+
+    <!-- RECURSOS -->
+    <section class="container">
+      <div class="recursos-wrapper">
+        <div class="recursos-title">
+          <h2>Recursos</h2>
+          <p class="dark-60">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum similique
+            repudiandae dicta.</p>
+        </div>
+        <div class="recursos-list">
+          {% for item in page.resources.local limit:3 %}
+          <div class="recurso-item">
+            <h6>{{ item.resource.title }}</h6>
+            <p class="smaller dark-60">{{ item.resource.text }}</p>
+            <a href="{{ item.resource.url }}" class="small">Link</a>
+          </div>
+          {% endfor %}
+        </div>
+        <div class="recursos-list">
+          {% for item in page.resources.external limit:3 %}
+          <div class="recurso-item">
+            <h6>{{ item.resource.title }}</h6>
+            <p class="smaller dark-60">{{ item.resource.text }}</p>
+            <a href="{{ item.resource.url }}" class="small">Link</a>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      <p class="align-right"><a href="{{ page.resources.url }}">Ver lista completa de recursos</a></p>
+    </section>
+  </main>
+  {% include footer.html %}
+</body>
+
+</html>
