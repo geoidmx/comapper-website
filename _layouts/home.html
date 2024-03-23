@@ -125,7 +125,7 @@
             <div class="historias-card-text">
               <h5>{{ project.title }}</h5>
               <p class="small light-60">{{ project.description }}</p>
-              <a href="{{ site.baseurl }}/{{ project.url }}" class="btn-round">➜</a>
+              <a href="{{ project.url | relative_url }}" class="btn-round">➜</a>
             </div>
           </div>
         </div>
@@ -169,7 +169,7 @@
             <h5>{{ task.title }}</h5>
             <p class="smaller dark-60 task-summary"> {{ task.description }}</p>
             <p class="align-right card-footer">
-              <a href="{{ site.baseurl }}/{{ task.url }}" class="">Leer mas</a>
+              <a href="{{ task.url | relative_url }}" class="">Leer mas</a>
               <a href="#" class="">Unirme</a>
             </p>
 
