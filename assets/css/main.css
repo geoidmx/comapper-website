@@ -42,8 +42,18 @@ body {
   margin: auto;
   margin-top: 5rem;
 }
+.container-center {
+  width: 88%;
+  margin: auto;
+}
 .img-fluid {
   width: 100%;
+}
+.mt-0 {
+  margin-top: 0 !important;
+}
+.d-none {
+  display: none !important;
 }
 
 /* TYPOGRAPHY */
@@ -504,7 +514,6 @@ p.category {
   height: 100%;
   display: block;
 }
-
 .historias-card-content {
   position: absolute;
   height: 100%;
@@ -520,7 +529,6 @@ p.category {
   box-sizing: border-box;
   display: grid;
 }
-
 .historias-card-text {
   align-self: end;
 }
@@ -721,12 +729,53 @@ input:last-child:hover {
   color: var(--lighter);
 }
 
+/* SINGLE */
+
+header.header-single {
+  background-color: var(--dark);
+  color: var(--light);
+  min-height: auto;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 3rem 3rem 1rem 3rem;
+  /* border-radius: 0 0 1rem 1rem; */
+}
+header.header-single h3 {
+  margin: 0;
+}
+
+.single-nav {
+  margin-top: 2rem;
+  border-top: solid 1px var(--secondary);
+}
+.single-nav ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0.4rem;
+  /* margin-top: 0; */
+}
+.single-nav ul li {
+  display: inline-block;
+  margin-right: 1.4rem;
+}
+.single-nav a {
+  color: var(--light-60);
+  font-size: 0.82rem;
+  text-decoration: none;
+}
+
 /* medium screens */
 @media screen and (min-width: 680px) {
 }
 
 /* Larges screens */
 @media screen and (min-width: 1140px) {
+  /* LAYOUT */
+  .container-center {
+    width: 66%;
+    margin: auto;
+  }
   /* HEADER */
   header {
     display: grid;
@@ -776,6 +825,9 @@ input:last-child:hover {
     display: grid;
     grid-template-columns: 140px 1fr;
     align-items: center;
+  }
+  .mt--1 {
+    margin-top: -1px;
   }
   .is-top {
     box-shadow: var(--shadow-mild);
@@ -879,5 +931,111 @@ input:last-child:hover {
     margin-left: -1.4rem;
     border-radius: 1.4rem 0 0 1.4rem;
     margin-top: 0;
+  }
+
+  /* SINGLE */
+  header.header-single {
+    padding: 3rem 17% 1rem 17%;
+    /* border-radius: 0 0 1rem 1rem; */
+  }
+  .single-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 24%;
+    gap: 3rem;
+    margin-top: 3rem;
+  }
+  aside.single-aside {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 5rem;
+    height: min-content;
+  }
+  .single-logo {
+    background-color: var(--light-60);
+    margin: 0;
+    padding: 1.4rem 2rem;
+    box-sizing: border-box;
+  }
+
+  /* accordion */
+  .accordion {
+    background-color: var(--light-60);
+    color: var(--dark);
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-size: 0.8rem;
+    box-shadow: var(--shadow-mild);
+    font-family: var(--font-primary);
+    margin-top: 0;
+  }
+  .active,
+  .accordion:hover {
+    background-color: #dfdfdf;
+  }
+  .panel {
+    padding: 0 1rem;
+    background-color: var(--dark);
+    color: var(--light);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    font-size: 0.8rem;
+  }
+  .panel a {
+    text-decoration: none;
+    color: var(--light);
+  }
+  .panel a:hover {
+    color: var(--lighter);
+  }
+  .accordion:after {
+    content: "\02795";
+    color: var(--dark-60);
+    float: right;
+    margin-left: 5px;
+    font-weight: 100;
+    font-size: 0.6rem;
+  }
+  .active:after {
+    content: "\2796";
+  }
+  .tareas-wrapper-single {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  .tareas-card-single {
+    background-color: var(--lighter);
+    box-shadow: var(--shadow);
+    padding: 2rem;
+    position: relative;
+    /* display: grid;
+        grid-template-columns: 90px 1fr;
+        gap: 1rem; */
+  }
+  .tareas-card-single h5 {
+    margin: 0;
+    padding-top: 0.8rem;
+    line-height: 1.8rem;
+  }
+  .tareas-card-text {
+    font-size: 0.84rem;
+    padding-bottom: 3rem;
+  }
+  .footer-card-single {
+    text-align: right;
+    position: absolute;
+    bottom: 1rem;
+    right: 2rem;
+    display: inline-block;
+  }
+  .footer-card-single a {
+    margin-left: 0.5rem;
+    text-decoration: none;
   }
 }

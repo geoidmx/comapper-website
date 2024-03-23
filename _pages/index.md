@@ -4,10 +4,10 @@
 
 layout: home
 permalink: '/'
-title: Ciudades mas resilentes mediante datos
+title: Datos para las Ciudades Resilientes
 
 header hero:
-    title: Ciudades mas resilentes mediante datos
+    title: Datos para las Ciudades Resilientes
     text: Somos una comunidad de personas y organizaciones con interés en el <strong>desarrollo y mejoramiento de datos</strong> para fortalecer la resiliencia en las sociedades y gobiernos locales.
     url: https://www.openstreetmap.org/user/pranauri
 header project:
@@ -17,7 +17,7 @@ header project:
     url: https://www.openstreetmap.org/user/pranauri
 
 we do:
-    mapping_url: https://www.openstreetmap.org/user/pranauri
+    mapping_url: /cartografia-colaborativa/
     gtools_url: https://www.openstreetmap.org/user/pranauri
     training_url: https://www.openstreetmap.org/user/pranauri
 
