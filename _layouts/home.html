@@ -149,12 +149,12 @@
               {% endfor %}
               <ul>
                 {% for category in all_categories %}
-                <li><a href="{{ site.baseurl }}/tareas/categoria/{{ category | slugify }}/">{{ category
+                <li><a href="tareas/categoria/{{ category | slugify }}/">{{ category
                     }}</a></li>
                 {% endfor %}
               </ul>
             </nav>
-            <a href="{{ site.baseurl }}/tareas/categoria/todas/">Ver todos</a>
+            <a href="tareas/categoria/todas/">Ver todos</a>
           </div>
         </div>
 
@@ -169,7 +169,7 @@
             <h5>{{ task.title }}</h5>
             <p class="smaller dark-60 task-summary"> {{ task.description }}</p>
             <p class="align-right card-footer">
-              <a href="{{ task.url }}" class="">Leer mas</a>
+              <a href="{{ site.baseurl }}/{{ task.url }}" class="">Leer mas</a>
               <a href="#" class="">Unirme</a>
             </p>
 
