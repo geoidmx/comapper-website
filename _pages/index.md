@@ -18,7 +18,7 @@ header project:
 
 we do:
     mapping_url: /cartografia-colaborativa/
-    gtools_url: https://www.openstreetmap.org/user/pranauri
+    gtools_url: /gtools/
     training_url: https://www.openstreetmap.org/user/pranauri
 
 community:
