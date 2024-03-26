@@ -27,7 +27,7 @@ community:
     rewards_url: /recompensas/
 
 we are:
-    people_url: https://www.openstreetmap.org/user/pranauri
+    people_url: /comunidad/
 
 we collaborate:
     - collaborator:

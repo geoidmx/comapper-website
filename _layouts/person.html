@@ -1,9 +1,11 @@
 ---
 layout: default
 ---
+
+{% if page.overview %}
   <header class="header-single">
-    <h3>{{ page.title }}</h3>
-    <p>{{ page.description }} </p>
+    <h3>{{ page.group.title }}</h3>
+    <p>{{ page.group.text }} </p>
     <nav class="single-nav">
       <ul>
         {% for theme in page.group.themes %}
@@ -16,5 +18,41 @@ layout: default
   <div class="container-center">
     <main class="single-main">
       {{ content }}
+      <section>
+        <h3>Nuestros Colaboradores</h3>
+        <div class="tareas-wrapper-single">
+          {% for person in site[page.type] %}
+          <div class="tareas-card-single">
+            <img src="{{ person.photo }}" alt="" class="img-fluid">
+            <P class="category"><strong>{{ person["job title"] }}</strong></P>
+            <P class="category">{{ person.team }}</P>
+            <h5>{{ person.title }}</h5>
+            {% if person["member type"]["is staff"] %}
+            <p class="tareas-card-text">Miembro Staff</p>
+            {% endif %}
+            <p class="footer-card-single">
+              <a href="{{ person.url }}" class="">Leer más</a>
+            </p>
+          </div>
+          {% endfor %}
+        </div>
+      </section>
     </main>
   </div>
+{% else %}
+  <header class="header-single">
+    <img src="{{ page.photo }}" alt="" class="img-fluid">
+    <h3>{{ page.title }}</h3>
+    <p>{{ page["job title"] }} </p>
+    <nav class="single-nav">
+      <ul>
+        <li>{{ page.team }}</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container-center">
+    <main class="single-main">
+      {{ content }}
+    </main>
+  </div>
+{% endif %}
