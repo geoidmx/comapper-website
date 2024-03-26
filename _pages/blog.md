@@ -7,4 +7,11 @@ type: posts
 group:
   title: Blog de la Comunidad
   text: Compartimos regularmente información, opiniones, contenido de interés que te puede ser de utilidad.
+  themes:
+    - theme:
+      title: Eventos
+      permalink: /eventos/
+    - theme:
+      title: Recompensas
+      permalink: /recompensas/
 ---
