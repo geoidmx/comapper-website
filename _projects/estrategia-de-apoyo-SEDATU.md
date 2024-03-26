@@ -1,6 +1,6 @@
 ---
 title: Estrategia SEDATU - HOT
-image: https://comapper.org/wp-content/uploads/2022/06/acciones-2.jpg
+image: https://cdn.comapper.org/website/pages/sedatu.jpg
 description: Acompañamiento municipal bajo la estrategia "Planeación territorial - Rumbo a la gestión ordenada de los municipios".
 group:
   title: Historias de Éxito
