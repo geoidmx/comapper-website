@@ -20,7 +20,7 @@
       <a href="{{ page['header hero'].url }}" class="btn">Contribuir</a>
     </div>
     <div class="outstanding"
-      style="background-image: url('{{ page['header project'].image }}');">
+      style="background-image: url('{{ page['header project'].image | relative_url }}');">
       <div class="light">
         <h5>{{ page['header project'].title }}</h5>
         <p class="small">{{ page['header project'].text }}</p>
