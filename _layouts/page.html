@@ -49,6 +49,25 @@
         </div>
       </section>
       {% endif %}
+      {% if page.resume %}
+      <!-- Resume contenet -->
+      <section>
+        <div class="tareas-wrapper-single">          
+          {% for project in site[page.type] %}
+          <div class="historias-card">
+            <img src="{{ project.image }}" alt="" class="bg-card">
+            <div class="historias-card-content">
+              <div class="historias-card-text">
+                <h5>{{ project.title }}</h5>
+                <p class="small light-60">{{ project.description }}</p>
+                <a href="{{ project.url | relative_url }}" class="btn-round">➜</a>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </section>
+      {% endif %}
     </main>
     {% include single_aside.html %}
   </div>

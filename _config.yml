@@ -22,7 +22,7 @@ title: Co.Mapper
 email: hola@comapper.org
 description: >- # this means to ignore newlines until "baseurl:"
   Somos una comunidad de personas y organizaciones con interés en el desarrollo y mejoramiento de datos para fortalecer la resiliencia en las sociedades y gobiernos locales.
-baseurl: "comapper-website" # the subpath of your site, e.g. /blog
+baseurl: #"comapper-website" # the subpath of your site, e.g. /blog
 url: https://comapper.org/ # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: geoid_mx
 github_username:  geoidmx

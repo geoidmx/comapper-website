@@ -1,7 +1,7 @@
 ---
 title: Open Cities Mexico
-image: https://cdn.hotosm.org/website/photo.png
-description: Project Associate - Latin America and Caribbean Hub
+image: https://comapper.org/wp-content/uploads/2022/06/acciones-2.jpg
+description: Co.Mapper Tulum se desarrolló en consonancia con el Programa de Ciudades Resilientes de GFDRR
 group:
   title: Historias de Éxito
   text: Promoción de la cartografía colaborativa, la socialización de datos abiertos, y el uso de tecnología libre.

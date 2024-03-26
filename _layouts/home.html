@@ -20,7 +20,7 @@
       <a href="{{ page['header hero'].url }}" class="btn">Contribuir</a>
     </div>
     <div class="outstanding"
-      style="background-image: url('{{ page['header project'].image }}'); background-size: cover;">
+      style="background-image: url('{{ page['header project'].image }}');">
       <div class="light">
         <h5>{{ page['header project'].title }}</h5>
         <p class="small">{{ page['header project'].text }}</p>
@@ -154,7 +154,7 @@
                 {% endfor %}
               </ul>
             </nav>
-            <a href="tareas/categoria/todas/">Ver todos</a>
+            <a href="{{ "/tareas/categoria/todas/" | relative_url }}">Ver todas</a>
           </div>
         </div>
 
@@ -185,7 +185,7 @@
       <div class="hacemos-wrapper">
         <div class="hacemos-card-main bg-secondary">
           <h2>Comunidad</h2>
-          <p class="light-60">Conocenos, Porro sequi quisquam.
+          <p class="light-60">Conocenos, todos podemos colaborar.
           </p>
         </div>
         <div class="hacemos-card">
@@ -193,8 +193,7 @@
             <img src="{{ "assets/img/icon.png" }}" alt="">
           </div>
           <h4>Blog</h4>
-          <p class="small dark-60">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae numquam at
-            consequatur, ratione.</p>
+          <p class="small dark-60">Compartimos regularmente información, opiniones, contenido de interés que te puede ser de utilidad.</p>
           <div class="hacemos-card-footer"><a href="{{ page['community'].blog_url }}" class="btn-round-light">➜</a>
           </div>
         </div>
@@ -203,8 +202,7 @@
             <img src="{{ "assets/img/icon.png" }}" alt="">
           </div>
           <h4>Eventos</h4>
-          <p class="small dark-60">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae numquam at
-            consequatur, ratione.</p>
+          <p class="small dark-60">No te pierdas la oportunidad de participar, impulsar el aprendizaje y networking relacionadas con el mapping.</p>
           <div class="hacemos-card-footer"><a href="{{ page['community'].events_url }}" class="btn-round-light">➜</a>
           </div>
         </div>
@@ -213,8 +211,7 @@
             <img src="{{ "assets/img/icon.png" }}" alt="">
           </div>
           <h4>Recompensas</h4>
-          <p class="small dark-60">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae numquam at
-            consequatur, ratione.</p>
+          <p class="small dark-60">Conoce los incentivos que los colaboradores pueden obtener al participar activamente en la comunidad.</p>
           <div class="hacemos-card-footer"><a href="{{ page['community'].rewards_url }}" class="btn-round-light">➜</a>
           </div>
         </div>
@@ -226,7 +223,7 @@
       <div class="somos-wrapper">
         <div class="historioas-main">
           <h2>¿Quiénes somos?</h2>
-          <p class="dark-60">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <p class="dark-60">Visión general de quiénes conformamos la comunidad.</p>
         </div>
         <div class="somos-card">
           <div class="avatars">
@@ -239,11 +236,9 @@
             </ul>
           </div>
           <h5>Conoce al equipo Co.Mapper</h5>
-          <p class="small dark-60">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, vitae. Ad,
-            sapiente
-            voluptas dolor molestiae quo beatae facere ipsam quod officia, ex ut nihil nisi, a cum quam
-            mollitia
-            fugit.</p>
+          <p class="small dark-60">Somos las personas detrás del proyecto, que nos hemos unido con un propósito común: 
+            crear datos precisos, actualizados y significativos que reflejen la diversidad y la complejidad de nuestro entorno.
+          </p>
           <a href="{{ page['we are'].people_url }}">Ver mas</a>
         </div>
       </div>
