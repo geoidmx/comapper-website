@@ -13,7 +13,7 @@ header hero:
 header project:
     title: Open Cities México
     text: Co.Mapper Tulum se desarrolló en consonancia con el Programa de Ciudades Resilientes de GFDRR
-    image: /assets/img/opencities.jpg
+    image: assets/img/opencities.jpg
     url: /proyectos/open-cities-mexico/
 
 we do:
