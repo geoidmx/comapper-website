@@ -27,7 +27,7 @@ layout: default
           <P class="category">{{ post.date }}</P>
           <p class="tareas-card-text">{{ post.description }}</p>
           <p class="footer-card-single">
-            <a href="{{ post.url }}" class="">Leer más</a>
+            <a href="{{ post.url | relative_url }}" class="">Leer más</a>
           </p>
         </div>
         {% endfor %}
