@@ -44,6 +44,10 @@ collections:
     title: Tasks
     output: true
     permalink: /tareas/:title/
+  events:
+    title: Eventos
+    output: true
+    permalink: /eventos/:title/
   people:
     title: People
     output: true
@@ -71,6 +75,14 @@ defaults:
       category:
       open_date:
       is_available:
+  - scope:
+      path: ''
+      type: events
+    values:
+      layout: post
+      image:
+      description:
+      category:
   - scope:
       path: ''
       type: people
