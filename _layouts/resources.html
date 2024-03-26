@@ -1,0 +1,40 @@
+---
+layout: default
+---
+<header class="header-single">
+  <h3>{{ page.group.title }}</h3>
+  <p>{{ page.group.text }} </p>
+  <nav class="single-nav">
+    <ul>
+      {% for theme in page.group.themes %}
+      <li><a href="{{ theme.permalink }}">{{ theme.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+</header>
+
+<div class="container-center single-wrapper">
+  <main class="single-main">
+    <div>
+      <div class="recursos-list">
+        {% for item in page.resources.local limit:3 %}
+        <div class="recurso-item">
+          <h6>{{ item.resource.title }}</h6>
+          <p class="smaller dark-60">{{ item.resource.text }}</p>
+          <a href="{{ item.resource.url }}" class="small" target="_blank">Link</a>
+        </div>
+        {% endfor %}
+      </div>
+      <div class="recursos-list">
+        {% for item in page.resources.external limit:3 %}
+        <div class="recurso-item">
+          <h6>{{ item.resource.title }}</h6>
+          <p class="smaller dark-60">{{ item.resource.text }}</p>
+          <a href="{{ item.resource.url }}" class="small" target="_blank">Link</a>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </main>
+  {% include single_aside.html %}
+</div>
