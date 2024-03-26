@@ -1,0 +1,39 @@
+---
+layout: default
+---
+
+<header class="header-single">
+  <h3>{{ page.group.title }}</h3>
+  <p>{{ page.group.text }}</p>
+  <nav class="single-nav">
+    <ul>
+      {% for theme in page.group.themes %}
+      <li><a href="{{ theme.permalink }}">{{ theme.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+</header>
+
+<div class="container-center single-wrapper">
+  <main class="single-main">
+    {{ content }}
+    {% if page.overview %}
+    <section>
+      <div class="tareas-wrapper-single">
+        {% for post in site[page.type] %}
+        <div class="tareas-card-single">
+          <h5>{{ post.title }}</h5>
+          <P class="category"><strong>{{ post.category }}</strong></P>
+          <P class="category">{{ post.date }}</P>
+          <p class="tareas-card-text">{{ post.description }}</p>
+          <p class="footer-card-single">
+            <a href="{{ post.url }}" class="">Leer más</a>
+          </p>
+        </div>
+        {% endfor %}
+      </div>
+    </section>
+    {% endif %}
+  </main>
+  {% include single_aside.html %}
+</div>

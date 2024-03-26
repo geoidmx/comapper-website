@@ -23,19 +23,19 @@ layout: default
       <h3>Tareas disponibles</h3>
       <p>Relacionadas con {{ page.title }}</p>
       <div class="tareas-wrapper-single">
-      {% assign filtered_tasks = site.tasks | where: "category", page.category %}
-      {% for task in filtered_tasks %}
-      <div class="tareas-card-single">
-        <P class="category"><strong>{{ task.category }}</strong></P>
-        <P class="category">Disponible: {{ task.open_date }}</P>
-        <h5>{{ task.title }}</h5>
-        <p class="tareas-card-text">{{ task.description }}</p>
-        <p class="footer-card-single">
-          <a href="{{ task.url }}" class="">Leer más</a>
-          <a href="#" class="">Unirme</a>
-        </p>
-      </div>
-      {% endfor %}
+        {% assign filtered_tasks = site.tasks | where: "category", page.category %}
+        {% for task in filtered_tasks %}
+          <div class="tareas-card-single">
+            <P class="category"><strong>{{ task.category }}</strong></P>
+            <P class="category">Disponible: {{ task.open_date }}</P>
+            <h5>{{ task.title }}</h5>
+            <p class="tareas-card-text">{{ task.description }}</p>
+            <p class="footer-card-single">
+              <a href="{{ task.url }}" class="">Leer más</a>
+              <a href="#" class="">Unirme</a>
+            </p>
+          </div>
+        {% endfor %}
       </div>
     </section>
     {% endif %}

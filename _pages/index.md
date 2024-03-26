@@ -22,9 +22,9 @@ we do:
     training_url: /capacitaciones-y-acompañamiento/
 
 community:
-    blog_url: https://www.openstreetmap.org/user/pranauri
-    events_url: https://www.openstreetmap.org/user/pranauri
-    rewards_url: https://www.openstreetmap.org/user/pranauri
+    blog_url: /blog/
+    events_url: /eventos/
+    rewards_url: /recompensas/
 
 we are:
     people_url: https://www.openstreetmap.org/user/pranauri
