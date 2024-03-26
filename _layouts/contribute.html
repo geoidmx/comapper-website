@@ -1,0 +1,52 @@
+---
+layout: default
+---
+<header class="header-single">
+  <h3>{{ page.group.title }}</h3>
+  <p>{{ page.group.text }} </p>
+  <nav class="single-nav">
+    <ul>
+      {% for theme in page.group.themes %}
+      <li><a href="{{ theme.permalink }}">{{ theme.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+</header>
+   
+   <!-- COMO CONTRIBUIR -->
+    <section class="container contribuir">
+        <h2>Cómo contribuir</h2>
+        <p>Sigue estos pasos para unirte a la acción.</p>
+        <div class="contribuir-wrapper">
+          <div>
+            <img src="{{ "assets/img/test-1.png" }}" alt="" class="img-fluid">
+            <h5>Descubre tu pasión</h5>
+            <p class="small dark-60">Descubre cómo tu interés por la cartografía colaborativa y los datos
+              abiertos puede contribuir a proyectos significativos.</p>
+          </div>
+          <div>
+            <img src="{{ "assets/img/test-2.png" }}" alt="" class="img-fluid">
+            <h5>Explora nuestras líneas de acción</h5>
+            <p class="small dark-60">Encuentra la línea de acción en la que puedes aplicar tus habilidades en
+              cartografía y datos abiertos hacer la mayor diferencia.</p>
+          </div>
+          <div>
+            <img src="{{ "assets/img/test-3.png" }}" alt="" class="img-fluid">
+            <h5>Únete a la comunidad Comapper</h5>
+            <p class="small dark-60">Conectate con otros entusiastas, intercambia ideas y recibe orientación. La
+              fuerza de nuestra comunidad radica en la diversidad de talentos y perspectivas.</p>
+          </div>
+          <div>
+            <img src="{{ "assets/img/test-2.png" }}" alt="" class="img-fluid">
+            <h5>Involúcrate en una tarea</h5>
+            <p class="small dark-60">Unete mapeando, desarrollando tecnología, mejorando datos o contribuyendo
+              en proyectos temáticos. Una tarea espera tu participación.</p>
+          </div>
+          <div>
+            <img src="{{ "assets/img/test-3.png" }}" alt="" class="img-fluid">
+            <h5>Documenta y comparte tu trabajo</h5>
+            <p class="small dark-60">Asegúrate de documentar y compartir. Una robusta documentacion mejora la
+              calidad del proyecto, e inspira a otros a seguir tu ejemplo. </p>
+          </div>
+        </div>
+      </section>
