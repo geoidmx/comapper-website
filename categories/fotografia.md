@@ -1,10 +1,11 @@
 ---
-layout: category
+layout: task
 title: Tareas de Fotografía
 permalink: /tareas/categoria/fotografia/
+collection: tasks
+category: fotografia
+filter: true
 pagination:
   enable: true
-  category: fotografia
   permalink: /:num/
-  collection: tasks
 ---

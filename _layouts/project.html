@@ -4,7 +4,6 @@ layout: default
 <header class="header-single">
   <h3>{{ page.group.title }}</h3>
   <p>{{ page.group.text }} </p>
-
   <nav class="single-nav">
     <ul>
       {% for theme in page.group.themes %}
@@ -17,28 +16,6 @@ layout: default
 <div class="container-center single-wrapper">
   <main class="single-main">
     {{ content }}
-    {% if page.task %}
-    <!-- TAREAS -->
-    <section>
-      <h3>Tareas disponibles</h3>
-      <p>Relacionadas con {{ page.title }}</p>
-      <div class="tareas-wrapper-single">
-      {% assign filtered_tasks = site.tasks | where: "category", page.category %}
-      {% for task in filtered_tasks %}
-      <div class="tareas-card-single">
-        <P class="category"><strong>{{ task.category }}</strong></P>
-        <P class="category">Disponible: {{ task.open_date }}</P>
-        <h5>{{ task.title }}</h5>
-        <p class="tareas-card-text">{{ task.description }}</p>
-        <p class="footer-card-single">
-          <a href="{{ task.url }}" class="">Leer más</a>
-          <a href="#" class="">Unirme</a>
-        </p>
-      </div>
-      {% endfor %}
-      </div>
-    </section>
-    {% endif %}
   </main>
   {% include single_aside.html %}
 </div>

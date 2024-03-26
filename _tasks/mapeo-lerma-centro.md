@@ -2,9 +2,10 @@
 title: Mapeo Lerma Centro
 image: https://cdn.hotosm.org/website/photo.png
 description: Project Associate - Latin America and Caribbean Hub
-category: mapeo
 open_date: 2024-03-19
 is_available: True
+collection: tasks
+category: mapeo
 ---
 
 ## Co.Mapper Tulum

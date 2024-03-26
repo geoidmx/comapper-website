@@ -2,7 +2,7 @@
 layout: page
 title: Historias de Éxito
 permalink: /historias-de-exito/
-resume: true
+overview: true
 type: projects
 group:
   title: Historias de Éxito

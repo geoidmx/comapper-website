@@ -1,10 +1,11 @@
 ---
-layout: category
+layout: task
 title: Todas las tareas
 permalink: /tareas/categoria/todas/
+collection: tasks
+category: all
+filter: true
 pagination:
   enable: true
-  category: todas
   permalink: /:num/
-  collection: tasks
 ---

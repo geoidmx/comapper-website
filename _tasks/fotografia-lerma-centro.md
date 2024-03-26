@@ -2,12 +2,13 @@
 title: Fotografia Lerma Centro
 image: https://cdn.hotosm.org/website/photo.png
 description: Project Associate - Latin America and Caribbean Hub
-category: fotografia
 open_date: 2024-03-19
 is_available: True
+collection: tasks
+category: fotografia
 ---
 
-## Co.Mapper Tulum
+![Alt text](https://cdn.hotosm.org/website/photo.png "a title")
 
 A medida que las poblaciones urbanas crecen y su vulnerabilidad aumenta, la gestión del crecimiento urbano y la forma que se fomenta la resiliencia de las ciudades ante los peligros naturales y los impactos del cambio climático se convierten en un reto cada vez mayor, que requiere datos geográficos detallados y actualizados del entorno construido. El éxito suele depender de: las capacidades y redes locales para mantener y utilizar la información sobre riesgos información sobre riesgos, entornos políticos que apoyen la gestión y el intercambio eficaz de datos, y herramientas específicas que puedan ayudar a convertir los datos en acciones significativas.
 

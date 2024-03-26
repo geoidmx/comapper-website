@@ -1,77 +1,64 @@
-<!DOCTYPE html>
-<html lang="{{ site.lang | default: " es-MX" }}">
+---
+layout: default
+---
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ page.title }} {{ site.title }}</title>
-  <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
-  <script src="{{ "/assets/js/nav.js" | relative_url }}" defer></script>
-</head>
+<header class="header-single">
+  <h3>{{ page.group.title }}</h3>
+  <p>{{ page.group.text }}</p>
+  <nav class="single-nav">
+    <ul>
+      {% for theme in page.group.themes %}
+      <li><a href="{{ theme.permalink }}">{{ theme.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+</header>
 
-<body>
-  {% include nav.html%}
-  <header class="header-single">
-    <h3>{{ page.group.title }}</h3>
-    <p>{{ page.group.text }} </p>
+<div class="container-center single-wrapper">
+  <main class="single-main">
+    {{ content }}
 
-    <nav class="single-nav">
-      <ul>
-        {% for theme in page.group.themes %}
-        <li><a href="{{ theme.permalink }}">{{ theme.title }}</a></li>
-        {% endfor %}
-      </ul>
-    </nav>
-  </header>
+    {% if page.task %}
+    <section>
+      <h3>Tareas disponibles</h3>
+      <p>Relacionadas con {{ page.title }}</p>
+      <div class="tareas-wrapper-single">
+      {% assign filtered_tasks = site.tasks | where: "category", page.category %}
+      {% for task in filtered_tasks %}
+      <div class="tareas-card-single">
+        <P class="category"><strong>{{ task.category }}</strong></P>
+        <P class="category">Disponible: {{ task.open_date }}</P>
+        <h5>{{ task.title }}</h5>
+        <p class="tareas-card-text">{{ task.description }}</p>
+        <p class="footer-card-single">
+          <a href="{{ task.url }}" class="">Leer más</a>
+          <a href="#" class="">Unirme</a>
+        </p>
+      </div>
+      {% endfor %}
+      </div>
+    </section>
+    {% endif %}
 
-  <div class="container-center single-wrapper">
-    <main class="single-main">
-      {{ content }}
-      {% if page.task %}
-      <!-- TAREAS -->
-      <section>
-        <h3>Tareas disponibles</h3>
-        <p>Relacionadas con {{ page.title }}</p>
-        <div class="tareas-wrapper-single">
-        {% assign filtered_tasks = site.tasks | where: "category", page.category %}
-        {% for task in filtered_tasks %}
-        <div class="tareas-card-single">
-          <P class="category"><strong>{{ task.category }}</strong></P>
-          <P class="category">Disponible: {{ task.open_date }}</P>
-          <h5>{{ task.title }}</h5>
-          <p class="tareas-card-text">{{ task.description }}</p>
-          <p class="footer-card-single">
-            <a href="{{ task.url }}" class="">Leer más</a>
-            <a href="#" class="">Unirme</a>
-          </p>
-        </div>
-        {% endfor %}
-        </div>
-      </section>
-      {% endif %}
-      {% if page.resume %}
-      <!-- Resume contenet -->
-      <section>
-        <div class="tareas-wrapper-single">          
-          {% for project in site[page.type] %}
-          <div class="historias-card">
-            <img src="{{ project.image }}" alt="" class="bg-card">
-            <div class="historias-card-content">
-              <div class="historias-card-text">
-                <h5>{{ project.title }}</h5>
-                <p class="small light-60">{{ project.description }}</p>
-                <a href="{{ project.url | relative_url }}" class="btn-round">➜</a>
-              </div>
+    {% if page.overview %}
+    <section>
+      <div class="tareas-wrapper-single">          
+        {% for project in site[page.type] %}
+        <div class="historias-card">
+          <img src="{{ project.image }}" alt="" class="bg-card">
+          <div class="historias-card-content">
+            <div class="historias-card-text">
+              <h5>{{ project.title }}</h5>
+              <p class="small light-60">{{ project.description }}</p>
+              <a href="{{ project.url | relative_url }}" class="btn-round">➜</a>
             </div>
           </div>
-          {% endfor %}
         </div>
-      </section>
-      {% endif %}
-    </main>
-    {% include single_aside.html %}
-  </div>
-  {% include footer.html %}
-</body>
+        {% endfor %}
+      </div>
+    </section>
+    {% endif %}
 
-</html>
+  </main>
+  {% include single_aside.html %}
+</div>
