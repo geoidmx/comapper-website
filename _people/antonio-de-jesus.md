@@ -1,11 +1,11 @@
 ---
 title: Antonio de Jesús Gutiérrez
 date: 2024-01-24 16:07:00 Z
-photo: https://cdn.hotosm.org/website/photo.png
+photo: https://cdn.comapper.org/website/people/to%C3%B1o.jpg
 member type:
   is staff: true
 job title: Product Development Manager
-team: Core Development
+team: Development
 social media (full url):
   OSM: https://www.openstreetmap.org/user/Arbekos%20Gh
 ---

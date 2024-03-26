@@ -9,11 +9,11 @@ title: Datos para las Ciudades Resilientes
 header hero:
     title: Datos para las Ciudades Resilientes
     text: Somos una comunidad de personas y organizaciones con interés en el <strong>desarrollo y mejoramiento de datos</strong> para fortalecer la resiliencia en las sociedades y gobiernos locales.
-    url: https://www.openstreetmap.org/user/pranauri
+    url: /contribuir/
 header project:
     title: Open Cities México
     text: Co.Mapper Tulum se desarrolló en consonancia con el Programa de Ciudades Resilientes de GFDRR
-    image: assets/img/opencities.jpg
+    image: https://cdn.comapper.org/website/opencities.jpg
     url: /proyectos/open-cities-mexico/
 
 we do:
@@ -32,52 +32,44 @@ we are:
 we collaborate:
     - collaborator:
         name: Humanitarian Open Streetmap Team
-        image: https://comapper.org/wp-content/uploads/2022/06/hot_logo.png
+        image: https://cdn.comapper.org/website/partners/hot_logo.png
         url: https://www.hotosm.org/
     - collaborator: 
         name: Global Facility for Disaster Reduction and Recovery
-        image: https://comapper.org/wp-content/uploads/2022/06/gfdrr_logo.png
+        image: https://cdn.comapper.org/website/partners/gfdrr_logo.png
         url: https://www.gfdrr.org/en
     - collaborator: 
         name: Swiss Re Foundation
-        image: https://comapper.org/wp-content/uploads/2022/06/SR_foundation_logo.png
+        image: https://cdn.comapper.org/website/partners/SR_foundation_logo.png
         url: https://www.swissre.com/
     - collaborator: 
         name: GeoID
-        image: https://comapper.org/wp-content/uploads/2022/06/geoid_logo.png
+        image: https://cdn.comapper.org/website/partners/geoid_logo.png
         url: https://geoid.mx/
     - collaborator: 
         name: UAEMex
-        image: https://comapper.org/wp-content/uploads/2022/06/uaem_logo.png
+        image: https://cdn.comapper.org/website/partners/uaem_logo.png
         url: http://facgeografia.uaemex.mx/
     - collaborator: 
         name: UQroo
-        image: https://comapper.org/wp-content/uploads/2022/06/uqroo_logo-1.png
+        image: https://cdn.comapper.org/website/partners/uqroo_logo-1.png
         url: uqroo.mx
 
 resources:
-    url: https://www.openstreetmap.org/user/pranauri
+    url: /recursos/
     local:
         - resource:
-            title: Humanitarian Open Streetmap Team
+            title: Curso de iD Editor de OSM
             text: Somos una comunidad de personas y organizaciones con interés en el <strong>desarrollo y mejoramiento de datos</strong> para fortalecer la resiliencia en las sociedades y gobiernos locales.
-            url: https://www.openstreetmap.org/user/pranauri
+            url: https://www.youtube.com/watch?v=J7f02IG_INc&list=PLtWxPkLLX2nY_AMCYigdwwkK0kkyTNIns
         - resource:
-            title: Humanitarian Open Streetmap Team
+            title: Curso de HOT Tasking Manager
             text: Somos una comunidad de personas y organizaciones con interés en el <strong>desarrollo y mejoramiento de datos</strong> para fortalecer la resiliencia en las sociedades y gobiernos locales.
-            url: https://www.openstreetmap.org/user/pranauri
+            url: https://www.youtube.com/watch?v=vGV1P5nXa1g&list=PLtWxPkLLX2nZ6maaufa4cqpoACJaD4WcY
         - resource:
-            title: Humanitarian Open Streetmap Team
+            title: Story Map Open Cities Latin America and Caribbean - Mexico
             text: Somos una comunidad de personas y organizaciones con interés en el <strong>desarrollo y mejoramiento de datos</strong> para fortalecer la resiliencia en las sociedades y gobiernos locales.
-            url: https://www.openstreetmap.org/user/pranauri
-        - resource:
-            title: Humanitarian Open Streetmap Team
-            text: Somos una comunidad de personas y organizaciones con interés en el <strong>desarrollo y mejoramiento de datos</strong> para fortalecer la resiliencia en las sociedades y gobiernos locales.
-            url: https://www.openstreetmap.org/user/pranauri
-        - resource:
-            title: Humanitarian Open Streetmap Team
-            text: Somos una comunidad de personas y organizaciones con interés en el <strong>desarrollo y mejoramiento de datos</strong> para fortalecer la resiliencia en las sociedades y gobiernos locales.
-            url: https://www.openstreetmap.org/user/pranauri
+            url: https://uploads.knightlab.com/storymapjs/dd83342a31a8cf257a09cac5430d7585/co-mapper/index.html
     external:
         - resource:
             title: Humanitarian Open Streetmap Team
