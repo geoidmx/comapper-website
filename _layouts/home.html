@@ -17,14 +17,14 @@
     <div class="hero">
       <h1>{{ page['header hero'].title }}</h1>
       <p>{{ page['header hero'].text }}</p>
-      <a href="{{ page['header hero'].url }}" class="btn">Contribuir</a>
+      <a href="{{ page['header hero'].url | relative_url }}" class="btn">Contribuir</a>
     </div>
     <div class="outstanding"
       style="background-image: url('{{ page['header project'].image | relative_url }}');">
       <div class="light">
         <h5>{{ page['header project'].title }}</h5>
         <p class="small">{{ page['header project'].text }}</p>
-        <a href="{{ page['header project'].url }}" class="btn-round">➜</a>
+        <a href="{{ page['header project'].url | relative_url }}" class="btn-round">➜</a>
       </div>
     </div>
   </header>
@@ -194,7 +194,7 @@
           </div>
           <h4>Blog</h4>
           <p class="small dark-60">Compartimos regularmente información, opiniones, contenido de interés que te puede ser de utilidad.</p>
-          <div class="hacemos-card-footer"><a href="{{ page['community'].blog_url }}" class="btn-round-light">➜</a>
+          <div class="hacemos-card-footer"><a href="{{ page['community'].blog_url | relative_url }}" class="btn-round-light">➜</a>
           </div>
         </div>
         <div class="hacemos-card">
@@ -203,7 +203,7 @@
           </div>
           <h4>Eventos</h4>
           <p class="small dark-60">No te pierdas la oportunidad de participar, impulsar el aprendizaje y networking relacionadas con el mapping.</p>
-          <div class="hacemos-card-footer"><a href="{{ page['community'].events_url }}" class="btn-round-light">➜</a>
+          <div class="hacemos-card-footer"><a href="{{ page['community'].events_url | relative_url }}" class="btn-round-light">➜</a>
           </div>
         </div>
         <div class="hacemos-card">
@@ -212,7 +212,7 @@
           </div>
           <h4>Recompensas</h4>
           <p class="small dark-60">Conoce los incentivos que los colaboradores pueden obtener al participar activamente en la comunidad.</p>
-          <div class="hacemos-card-footer"><a href="{{ page['community'].rewards_url }}" class="btn-round-light">➜</a>
+          <div class="hacemos-card-footer"><a href="{{ page['community'].rewards_url | relative_url }}" class="btn-round-light">➜</a>
           </div>
         </div>
       </div>
@@ -232,14 +232,14 @@
                 <li><a href="{{ person.url  | relative_url }}"><img src="{{ person.photo }}" alt=""></a></li>
               {% endfor %}
               {% assign total_collections = site.people | size %}
-              <li><a href="{{ page['we are'].people_url }}">+{{ total_collections }}</a></li>
+              <li><a href="{{ page['we are'].people_url | relative_url }}">+{{ total_collections }}</a></li>
             </ul>
           </div>
           <h5>Conoce al equipo Co.Mapper</h5>
           <p class="small dark-60">Somos las personas detrás del proyecto, que nos hemos unido con un propósito común: 
             crear datos precisos, actualizados y significativos que reflejen la diversidad y la complejidad de nuestro entorno.
           </p>
-          <a href="{{ page['we are'].people_url }}">Ver mas</a>
+          <a href="{{ page['we are'].people_url | relative_url }}">Ver mas</a>
         </div>
       </div>
     </section>
@@ -287,7 +287,7 @@
           {% endfor %}
         </div>
       </div>
-      <p class="align-right"><a href="{{ page.resources.url }}">Ver lista completa de recursos</a></p>
+      <p class="align-right"><a href="{{ page.resources.url | relative_url }}">Ver lista completa de recursos</a></p>
     </section>
   </main>
   {% include footer.html %}
