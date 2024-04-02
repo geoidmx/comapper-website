@@ -15,40 +15,28 @@ group:
       permalink: /eventos/
 ---
 
-### Clasificación de reconocimientos a participantes.
-Los participantes podrán acceder a diferentes reconocimientos y artículos promocionales según la siguiente clasificación y las que se puedan sumar durante el desarrollo de las tareas.
 
-- Envío de reconocimientos de avance y participación.
-- Envío de productos clasificación D.
-- Envío de productos TIPO C.
-- Envío de productos tipo B.
-- Envíos de productos tipo A.
-- Promoción de nuevos maperos.
-- Más cartografía generada.
-- Primero en terminar.
-- Más tiempo mapeando.
-- MVM.
-- Socios colaboradores.
-- Instituciones.
-
-**METAS DE CAMPAÑA**
-
-| Clasificación                                      | Meta     | Reconocimiento |
-|----------------------------------------------------|----------|----------------|
-| Envío de reconocimientos de avance y participación | 1500     | stickers       |
-| Envío de productos clasificación D                 | 200      | playera        |
-| Envío de productos clasificación C                 | 100      | taza           |
-| Envío de productos clasificación B                 | 100      | kit oficina    |
-| Envíos de productos clasificación A                | 100      | termo          |
-| Promoción de nuevos maperos                        | 100      | libreta        |
-| Más cartografía generada                           | 4        | tablet         |
-| Primero en terminar                                | 10       | amazon cards   |
-| Más tiempo mapeando                                | 20       | spotify cards  |
-| MVM (most value mapper)                            | 1        | kit especial   |
-| Socios colaboradores                               | 20       | kit oficina    |
-| Instituciones                                      | 20       | kit oficina    |
-
-
-**MEDICIÓN**
-
-La estrategia de comunicación se considera exitosa una vez alcanzadas las metas del proyecto así como contar con una planilla de 500 personas colaborando en la generación de datos para el proyecto en un periodo de 6 meses continuos. Entregar 2500 artículos promocionales.
+### ¡Queridos miembros de la comunidad! 
+ 
+Es con mucha alegría que queremos expresarles nuestro más sincero agradecimiento por su continuo compromiso y dedicación como voluntarios. Su labor desinteresada es fundamental para el éxito y la vitalidad de nuestra comunidad. 
+ 
+Nos complace anunciarles que, como muestra de nuestro aprecio por su arduo trabajo y esfuerzo, hemos preparado una serie de recompensas especiales para aquellos que han finalizado exitosamente las tareas asignadas. Estos utilitarios no solo son un reconocimiento a su dedicación, sino también una herramienta para ayudarles en sus futuras contribuciones. 
+ 
+A continuación, les presentamos la lista de los utilitarios que recibirán como recompensa: 
+ 
+* Hoodies personalizados:Perfectos para mantenerse abrigados durante las actividades comunitarias y mostrar su orgullo por ser parte de nuestra comunidad. 
+ 
+* Playeras con el logo de la comunidad: Ideales para lucir durante eventos y actividades, mostrando su compromiso y apoyo a nuestra causa. 
+ 
+* Libretas personalizadas: Perfectas para tomar notas durante sus actividades comunitarias o para planificar futuros proyectos. 
+ 
+* Botellas reutilizables: Para mantenerse hidratados mientras trabajan duro, y a la vez, contribuir a la reducción de residuos plásticos. 
+ 
+* Tarjetas de regalo de comercios: estas tarjetas les permitirán disfrutar de productos y servicios en establecimientos como ammazon, i-shop etc.  
+ 
+Esperamos que estas recompensas sean útiles y reflejen nuestro sincero agradecimiento por su invaluable contribución. Su dedicación y compromiso son la verdadera fuerza motriz detrás de nuestra comunidad, y esperamos seguir trabajando juntos para hacer de este lugar un hogar aún mejor para todos. 
+ 
+#### ¡Gracias nuevamente por todo lo que hacen! 
+ 
+Atentamente, 
+El equipo Co.Mapper

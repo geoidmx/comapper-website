@@ -43,6 +43,14 @@ we collaborate:
         image: https://cdn.comapper.org/website/partners/SR_foundation_logo.png
         url: https://www.swissre.com/
     - collaborator: 
+        name: Agence Française de Développement
+        image: https://cdn.comapper.org/website/partners/afd_logo.png
+        url: https://www.afd.fr/es
+    - collaborator: 
+        name: CartONG
+        image: https://cdn.comapper.org/website/partners/CartONG_logo_long_vector.svg
+        url: https://www.cartong.org/
+    - collaborator: 
         name: GeoID
         image: https://cdn.comapper.org/website/partners/geoid_logo.png
         url: https://geoid.mx/
