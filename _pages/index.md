@@ -44,7 +44,7 @@ we collaborate:
         url: https://www.swissre.com/
     - collaborator: 
         name: Agence Française de Développement
-        image: https://cdn.comapper.org/website/partners/afd_logo.jpg
+        image: https://cdn.comapper.org/website/partners/AFD_logo.svg
         url: https://www.afd.fr/es
     - collaborator: 
         name: CartONG
