@@ -48,7 +48,7 @@ we collaborate:
         url: https://www.afd.fr/es
     - collaborator: 
         name: CartONG
-        image: https://cdn.comapper.org/website/partners/CartONG_logo_long_vector.svg
+        image: https://cdn.comapper.org/website/partners/CartONG_logo.svg
         url: https://www.cartong.org/
     - collaborator: 
         name: GeoID
