@@ -45,6 +45,7 @@ body {
 .container-center {
   width: 88%;
   margin: auto;
+  padding-top: 1rem;
 }
 .img-fluid {
   width: 100%;
@@ -497,6 +498,9 @@ p.category {
   box-shadow: var(--shadow-mild);
   border-radius: 1rem;
   transition: all 400ms;
+  min-height: 17rem;
+  max-height: 17rem;
+  margin-bottom: 1rem;
 }
 
 .historias-card:hover {
