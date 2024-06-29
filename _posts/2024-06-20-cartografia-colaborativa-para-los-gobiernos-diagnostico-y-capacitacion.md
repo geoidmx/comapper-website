@@ -7,8 +7,6 @@ category: trainning
 author: arbekos
 ---
 
-![Cartografía Participativa en Tulum](https://cdn.comapper.org/website/posts/colectivo3-1.jpg "Cartografía Participativa en Tulum")
-
 #### Antecedentes
 
 En el contexto actual, la gestión eficiente y equitativa del territorio se está convirtiendo en una prioridad, el uso de herramientas avanzadas y la colaboración ciudadana son esenciales para lograr un desarrollo urbano sostenible que permita a los gobiernos locales tener una mejor base de conocimiento para ejercer políticas públicas de calidad.
