@@ -48,5 +48,7 @@ En este proyecto buscamos generar información geoespacial actualizada y detalla
 Durante este proceso de diagnóstico, capacitación y pruebas piloto en los proyectos, junto a los gobiernos locales, hemos reconocido valiosas lecciones que nos ayudarán a mejorar futuras iniciativas, entre las cuales podemos listar:
 
 > *Importancia de la Adaptabilidad:* Las herramientas y métodos enseñados deben ser flexibles para adaptarse a diferentes contextos locales y desafíos específicos, lo cual es crucial para abordar eficazmente las diversas problemáticas urbanas y climáticas. Además los servidores públicos deben estar preparados para adaptarse a nuevas tecnologías y métodos de trabajo, lo que requiere una mentalidad abierta y disposición para aprender continuamente.
+
 > *Capacitación Continua:* La formación inicial es solo el comienzo. Es vital ofrecer oportunidades continuas de capacitación y actualización para que los servidores públicos mantengan y mejoren sus habilidades a medida que las herramientas y los desafíos evolucionan.
+
 > *Importancia de la Colaboración Interinstitucional:* La colaboración entre distintas entidades gubernamentales y la participación ciudadana son cruciales para lograr una gestión territorial efectiva y sostenible, enriquece el proceso de toma de decisiones y mejora la implementación de soluciones prácticas.
