@@ -7,7 +7,7 @@ category: trainning
 author: arbekos
 ---
 
-![Sesion de capacitacion Maipú](https://cdn.comapper.org/website/posts/ogp.jpg "Sesion de capacitacion Maipú")
+![Sesion de capacitacion Maipú](https://cdn.comapper.org/website/posts/ogp1.jpg "Sesion de capacitacion Maipú")
 
 ##### Antecedentes
 
