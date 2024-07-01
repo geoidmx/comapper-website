@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
    id="Ilustración"
-   viewBox="0 0 300 250"
+   viewBox="0 0 300 200"
    version="1.1"
    sodipodi:docname="4-contribuye-involucrate.svg"
    width="300"
-   height="250"
+   height="200"
    inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -23,7 +23,7 @@
      inkscape:deskcolor="#505050"
      inkscape:zoom="2.7959596"
      inkscape:cx="247.5"
-     inkscape:cy="99.965679"
+     inkscape:cy="99.60802"
      inkscape:window-width="1920"
      inkscape:window-height="1051"
      inkscape:window-x="-9"
@@ -141,7 +141,7 @@
   </defs>
   <g
      id="g33"
-     transform="matrix(1.1295997,0,0,1.1295997,-129.55874,13.983935)">
+     transform="matrix(0.96015971,0,0,0.96015971,-87.624918,20.636348)">
     <path
        class="cls-11"
        d="m 266.7,54.15 c -2.5,-2.5 2,-7 2,-22 0,-24 -30,-21 -30,-21 -13,0 -41.86,7.79 -35,37 5,21.29 -4,13 -4,28 0,9 3,10 3,10 l 74,11 c 0,0 7,-4 7,-17 0,-13 -11.48,-20.48 -17,-26 z"
@@ -181,7 +181,7 @@
        id="rect18" />
     <polygon
        class="cls-8"
-       points="296.78,90.27 321.91,104.78 325.44,98.66 322.34,96.87 325.69,91.07 306.36,79.91 303.01,85.71 300.31,84.15 "
+       points="325.69,91.07 306.36,79.91 303.01,85.71 300.31,84.15 296.78,90.27 321.91,104.78 325.44,98.66 322.34,96.87 "
        id="polygon18" />
     <circle
        class="cls-7"

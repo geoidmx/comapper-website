@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
    id="Ilustración"
-   viewBox="0 0 300 250"
+   viewBox="0 0 300 200"
    version="1.1"
    sodipodi:docname="5-contribuye-documenta.svg"
    width="300"
-   height="250"
+   height="200"
    inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -23,7 +23,7 @@
      inkscape:deskcolor="#505050"
      inkscape:zoom="2.7959596"
      inkscape:cx="247.5"
-     inkscape:cy="99.965679"
+     inkscape:cy="99.60802"
      inkscape:window-width="1920"
      inkscape:window-height="1051"
      inkscape:window-x="-9"
@@ -141,7 +141,7 @@
   </defs>
   <g
      id="g30"
-     transform="matrix(1.3268092,0,0,1.3268092,-174.18859,-2.8820684)">
+     transform="matrix(1.0024781,0,0,1.0024781,-94.942501,18.377988)">
     <path
        class="cls-7"
        d="m 212.82,49.98 c -7.37,8.42 -13.48,11.56 -18.19,7.8 -5.2,-4.16 -3.93,-10.32 2.5,-19.49 8.93,-12.73 18.14,-12.71 22.96,-9.09 4.16,3.12 0,12.47 -7.28,20.79 z"
